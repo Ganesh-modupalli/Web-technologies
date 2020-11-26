@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Hide & Show buttons in JS</title>
+<script>
+function hiding(){
+document.getElementById("a").style.display="block";
+document.getElementById("a").style.textAlign="center";
+document.getElementById("b").style.display="none";
+document.getElementById("a").setAttribute("style","color:oceanblue;background-color:lightgreen;text-align:center");
+document.getElementById("e").setAttribute("style","color:green;background-color:#ffffff;text-align:center");
+
+}
+function showing(){
+document.getElementById("a").style.display="none";
+document.getElementById("b").style.display="block";
+document.getElementById("b").style.textAlign="center";
+document.getElementById("b").setAttribute("style","color:darkblue;background-color:lightpink;text-align:center");
+document.getElementById("f").setAttribute("style","color:orange;background-color:#ffffff;text-align:center");
+
+
+}
+</script>
+<style>
+
+#c{
+color:#000000;
+background-color:pink;
+text-align:center;
+}
+#d{
+color:blue;
+background-color:yellow;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<center>
+<input id="c" type="submit" value="HIDE" onclick="hiding()" />
+<input id="d" type="submit" value="SHOW" onclick="showing()" /><br><br>
+</center>
+<form id="a" style="display:none">
+<label>First Name:</label><br>
+<input type="text" placeholder="Enter your first name" size="40" /> <br><br>
+<label>Last Name:</label><br>
+<input type="text" placeholder="Enter your last name" size="40" /> <br><br>
+<label>E-mail:</label><br>
+<input type="email" placeholder="Enter your email" size="40" /> <br><br>
+<label>Phone Number:</label><br>
+<input type="tel" placeholder="Enter your tel number" size="40"  /> <br><br>
+<label>Password:</label><br>
+<input type="password" placeholder="Enter password" size="40" /> <br><br>
+<label>Age:</label><br>
+<input type="number" placeholder="Enter your age" size="40"  /> <br><br>
+<label>YOP:</label><br>
+<input type="date" placeholder="Enter year of passing"  size="40" /> <br><br>
+<label>Fav Color:</label><br>
+<input type="text" placeholder="Enter your fav color" size="40" /> <br><br>
+<label>Time:</label><br>
+<input type="time" placeholder="Enter the time when applying" size="40" /> <br><br>
+<button id="e">Register</button>
+</form>
+<form id="b" style="display:none">
+<label>Email:</label><br>
+<input type="email" placeholder="Enter your email" size="40" /> <br><br>
+<label>Password:</label><br>
+<input type="password" placeholder="Enter your password" size="40" /> <br><br>
+<button id="f">Login</button>
+</form>
+
+
+</body>
+</html>

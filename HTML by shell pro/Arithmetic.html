@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+#addition{
+color:red;
+background-color:yellow;
+}
+#subtraction{
+color:magenta;
+background-color:#ffffff;
+}
+#multiplication{
+color:green;
+background-color:#ffffff;
+}
+#division{
+color:teal;
+background-color:#ffffff;
+}
+#all{
+color:blue;
+background-color:#ffffff;
+}
+</style>
+</head>
+<body>
+<script>
+function f1(){
+var a=document.getElementById("s").value;
+var b=document.getElementById("m").value;
+document.getElementById("res").innerHTML=Number(s.value)+Number(m.value);
+}
+function f2(){
+var a=document.getElementById("c").value;
+var b=document.getElementById("d").value;
+document.getElementById("res1").innerHTML=a-b;
+}
+function f3(){
+var a=document.getElementById("e").value;
+var b=document.getElementById("f").value;
+document.getElementById("res2").innerHTML=a*b;
+}
+function f4(){
+var a=document.getElementById("g").value;
+var b=document.getElementById("h").value;
+document.getElementById("res3").innerHTML=a/b;
+}
+function f5(){
+var a=document.getElementById("i").value;
+var b=document.getElementById("j").value;
+document.getElementById("res4").innerHTML=Number(i.value)+Number(j.value);
+document.getElementById("res5").innerHTML=a-b;
+document.getElementById("res6").innerHTML=a*b;
+document.getElementById("res7").innerHTML=a/b;
+}
+
+</script>
+<form>
+<input id="s" type="number"/>
+<input id="m" type="number"/><br>
+<input id="addition" type="button" value="ADD"  onclick="f1()" /><br>
+<input id="c" type="number"/>
+<input id="d" type="number"/><br>
+<input id="subtraction" type="button" value="SUB" onclick="f2()" /><br>
+<input id="e" type="number"/>
+<input id="f" type="number"/><br>
+<input id="multiplication" type="button" value="MUL" onclick="f3()" /><br>
+<input id="g" type="number"/>
+<input id="h" type="number"/><br>
+<input id="division" type="button" value="DIV" onclick="f4()" /><br>
+<input id="i" type="number"/>
+<input id="j" type="number"/><br>
+<input id="all" type="button" value="ALL" onclick="f5()" /><br>
+</form>
+<h3 id="res"></h3>
+<h3 id="res1"></h3>
+<h3 id="res2"></h3>
+<h3 id="res3"></h3>
+<h3 id="res4"></h3>
+<h3 id="res5"></h3>
+<h3 id="res6"></h3>
+<h3 id="res6"></h3>
+<h3 id="res7"></h3>
+
+
+
+</body>
+
+
+</html>

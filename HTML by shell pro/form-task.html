@@ -1,0 +1,46 @@
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+function took(){
+var x=document.getElementById("a").value;
+
+document.getElementById("res").innerHTML = x;
+}
+
+function display(){
+document.getElementById("a").value="Web technologies....";
+}
+
+</script>
+
+<form>
+Enter Your First Name:<br>
+<input id="a" type="text" placeholder="First name" /><br>
+<!--Enter Your Last Name:<br>
+<input id="b" type="text"  placeholder="Last name"  /><br>
+Enter Your Email:<br>
+<input id="c" type="email"  placeholder="Email"  /><br>
+Enter Your Telephone:<br>
+<input id="d" type="tel"  placeholder="Telephone" maxlength="10" /><br>
+Enter The Password:<br>
+<input id="e" type="password"  placeholder="Password"  /><br>
+Enter Your Age:<br>
+<input id="f" type="number" placeholder="Age"/><br>
+Enter DOB:<br>
+<input id="g" type="date"  placeholder="Date Of Birth" /><br>
+Enter Passout Year:<br>
+<input id="h" type="month" placeholder="Year Of Passing" /><br>
+Enter Time:<br>
+<input id="i" type="time"  placeholder="Enter Time when applying" /><br>
+Enter Your Fav Color:<br>
+<input id="j" type="color"  placeholder="Favourite color" /><br><br> -->
+<input type="submit" value="GET" onclick="took()" />
+<input type="submit" value="SET" onclick="display()" />
+</form>
+<h4 id="res"></h4>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Applying styles in java script</title>
+</head>
+<body>
+<script>
+function textColor(){
+document.getElementById("abt").style.color="#000000";
+}
+function bGColor(){
+document.getElementById("abt").style.backgroundColor="yellow";
+}
+function textAlign(){
+document.getElementById("abt").style.textAlign="left";
+}
+function All(){
+document.getElementById("abt").setAttribute("style","color:blue;background-color:yellow;text-align:center");
+}
+
+</script>
+<center>
+<h1 id="abt">So much passion & love to do the task in programming....!!!</h1>
+<input type="submit" value="color" onclick="textColor()" />
+<input type="submit" value="bg-color" onclick="bGColor()" />
+<input type="submit" value="txtalign" onclick="textAlign()" />
+<input type="submit" value="all" onclick="All()" />
+</center>
+
+
+
+
+</body>
+
+
+
+</html>
